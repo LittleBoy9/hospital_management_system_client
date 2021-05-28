@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
 import SideBar from './components/SideBar';
+//import SideNav from './components/SideNav';
 
 import Home from './pages/Home';
 import Contact from './pages/Contact';
@@ -17,15 +18,18 @@ import 'primeflex/primeflex.css';
 import PrimeReact from "primereact/api";
 PrimeReact.ripple = true;
 
+
+
 function App() {
   return (
     <>
-         <SideBar />
-         <Switch>
+        <SideBar />
+         {/* <SideNav /> */}
+         {/* <Switch>
             <Route path='/' exact component={Home}/>
             <Route path='/about' component={About}/>
             <Route path='/conatct' component={Contact}/>
-         </Switch>
+         </Switch> */}
     </>
   );
 }
