@@ -1,20 +1,23 @@
-import React from 'react';
-
+import React from "react";
+import * as aiIcons from "react-icons/ai";
 
 export const SidebarData = [
-   {
-      title: 'Home',
-      path: '/',
-      cName: 'nav-text'
-   },
-   {
-      title: 'about',
-      path: '/about',
-      cName: 'nav-text'
-   },
-   {
-      title: 'contact',
-      path: '/contact',
-      cName: 'nav-text'
-   }
-]
+  {
+    icon: <aiIcons.AiOutlineHome />,
+    title: "Home",
+    path: "/",
+    active: true,
+  },
+  {
+    icon: <aiIcons.AiOutlineHome />,
+    title: "About",
+    path: "/about",
+    active: false,
+  },
+  {
+    icon: <aiIcons.AiOutlineHome />,
+    title: "Contact",
+    path: "/contact",
+    active: false,
+  },
+];
