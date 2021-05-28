@@ -47,6 +47,7 @@ export default function SideNav({ children }) {
       s.active = false;
     });
     SidebarData[index].active = true;
+    showNavbar();
     generateNav(SidebarData);
   };
 
