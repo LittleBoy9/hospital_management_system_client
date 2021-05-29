@@ -1,10 +1,13 @@
 import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
-import SideNav from "./components/SideNav";
+//import SideNav from "./components/SideNav";
 
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+
+
+import Login from './pages/Login';
 
 // PRIME REACT //
 import "primereact/resources/themes/saga-blue/theme.css";
@@ -19,13 +22,14 @@ PrimeReact.ripple = true;
 function App() {
   return (
     <>
-      <SideNav >
+      <Login />
+      {/* <SideNav >
         <Switch>
               <Route path='/' exact component={Home}/>
               <Route path='/about' component={About}/>
               <Route path='/contact' component={Contact}/>
         </Switch> 
-      </SideNav>
+      </SideNav> */}
     </>
   );
 }
